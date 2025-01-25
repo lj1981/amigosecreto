@@ -88,41 +88,32 @@ body {
 }
 
 .button-container {
-    width: 300px;
+    display: flex;
+    gap: 10px; /* Espaçamento entre os botões */
     justify-content: center;
+    margin-top: 20px;
 }
 
-/* Estilos de entrada de texto */
-.input-title {
-    flex: 1;
-    padding: 10px 15px;
-    font-size: 16px;
-    border: 2px solid #333;
-    border-right: none;
-    border-radius: 25px 0 0 25px;
-    font-family: "Merriweather", serif;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-/* Estilos de botão */
-button {
-    padding: 15px 30px;
+.button-draw, .button-restart {
+    flex: 1; /* Faz os botões ficarem proporcionais */
+    max-width: 150px;
+    padding: 10px 20px;
     font-family: "Inter", sans-serif;
     font-size: 16px;
     border: 2px solid #000;
     border-radius: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: var(--color-white);
+    background-color: var(--color-button);
     cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 
-.button-add {
-    background-color: var(--color-tertiary);
-    color: var(--color-text);
-    border-radius: 0 25px 25px 0;
-}
-
-.button-add:hover {
-    background-color: #a1a1a1;
+.button-draw:hover, .button-restart:hover {
+    background-color: var(--color-button-hover);
 }
 
 /* Listas */
@@ -140,28 +131,4 @@ ul {
     font-size: 22px;
     font-weight: bold;
     text-align: center;
-}
-
-/* Botão de sortear título */
-.button-draw {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: 10px 40px;
-    color: var(--color-white);
-    background-color: var(--color-button);
-    font-size: 16px;
-}
-
-.button-draw img {
-    margin-right: 40px;
-}
-
-.button-draw:hover {
-    background-color: var(--color-button-hover);
-}
-.button-disabled {
-    background-color: #e0e0e0;  /* Cor cinza claro */
-    color: var(--color-text);
-    cursor: not-allowed;         /* Indicador de que o botão não pode ser clicado */
 }
