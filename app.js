@@ -79,7 +79,7 @@ function mostrarBotaoReiniciar() {
     if (document.querySelector(".button-restart")) return;
 
     const botaoReiniciar = document.createElement("button");
-    botaoReiniciar.textContent = "Reiniciar Jogo";
+    botaoReiniciar.textContent = "Reiniciar sorteio";
     botaoReiniciar.classList.add("button-restart");
     botaoReiniciar.onclick = reiniciarSorteio;
 
